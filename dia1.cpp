@@ -2,20 +2,22 @@
 using namespace std;
 
 int main(){
-	string palabra;
+	string palabra1, palabra2;
 	int numero;
 	int numero1 = 1;
 	int numero2 = 2, numero3 = 3;
-	const int NUMERO = 0;
+	const int NUMERO = 0; /*// cost = que no se puede modificar el numero /*/
 	double decimal;
 	char letra;
 	bool booleano;
 
-	/*// Jugamos con palabra
-	palabra = "perro";
+	Jugamos con palabra
+	palabra1 = "perro";
 	cout << palabra << endl;
-	palabra = "casa";
-	cout << palabra << endl;
+	palabra2 = "verde";
+	cout << palabra2 << endl;
+	cout << palabra1 + palabra2 << endl;
+	palabra1 = palabra.append(palabra2);
 	*/
 	/*//Jugamos con número
 	cout << numero1 << endl;
@@ -96,5 +98,10 @@ int main(){
 	--numero1;
 	cout << numero1 << endl;
 
-	return 0;
+	cout << palabra <<endl;
+	cout << "La palabra tiene " << palabra.lenght() << "letras." << endl;
+	cout << "La palabra tiene" << palabra.size() << "letras." << endl;
+	cout << "La primera letra de palabra: " << palabra[0];
+	
+ 	return 0;
 }
