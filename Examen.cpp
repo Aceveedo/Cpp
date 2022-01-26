@@ -2,13 +2,9 @@
 using namespace std;
 
 int aniosADias (int anios){
-  const int diasEnUnAnio = 365;
-
-  dias = diasEnUnAnio*anios;
-  
-  return dias;
+  const int DIASENANIO = 365;
+  return DIASENANIO*anios;
 }
-aniosAMeses
 
 int main(){
 
@@ -24,6 +20,11 @@ cin >> aniosTiburon;
 cout << "El tiburon tiene " << aniosTiburon << " anios" << endl;
 
 // 3.- Partiendo de un numero de años, calcula cuanto tiempo en dias y cuánto tiempo en meses ha pasado
+int mesesTiburon;
+int diasTiburon;
+
+diasTiburon = aniosADias(aniosTiburon);
+cout << "El tiburon itene " << diasTiburon << " dias" << endl;
 
 return 0;
 }
