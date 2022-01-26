@@ -26,3 +26,6 @@ string juegos[numJuegos];
 
 return 0;
 }
+
+//Ejercicio para el 16/01/2022
+// Rellenar un vector con los 100 primeros numeros y sumar de 4 en 4 los numeros y guardarlos en otro vector

@@ -36,7 +36,7 @@ bool muchaDiferencia(int diferencia, int num1, int num2){
 //}
 
 //Este codigo sirve para poder preguntar la edad que tienes y que te responda una de las dos opciones definidas//
-//cout << "?Cuantos anios tienes? "; // Para preguntar (cout) //
+//cout << ¿Cuantos anios tienes? "; // Para preguntar (cout) //
 //cin >> edadIntroducida; // Para responder (cin) //
 
 //  if (edadIntroducida >= edad){
