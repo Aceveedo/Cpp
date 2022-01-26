@@ -23,11 +23,25 @@ int dientesCaidos(int anios){
 
 }
 
+int dientesCaidosConTope(int anios, int maxAnios){
+  int meses;
+  int maxMeses;
+  int total = 0;
+  meses = aniosAMeses(anios);
+  maxMeses = aniosAMeses(maxanios);
+  for(int i = 0 ; i <= meses && < maxMeses; i += 5){
+  total += i;
+  }
+  return total;
+
+}
+
 int main(){
   int mesesTiburon;
   int diasTiburon;
   int aniosTiburon;
   int totalDientes;
+  int tope = 8;
 
 // 1.- Imprime tu nombre por pantalla.
 
@@ -54,6 +68,9 @@ cout << "El tiburon itene " << mesesTiburon << " meses" << endl;
 
 totalDientes = dientesCaidos(aniosTiburon);
 cout << "Al tiburon se le han caido " << totalDientes << " dientes" << endl;
+
+// 5.- Si el tiburon tiene mas de 8 años ya no le quedan mas dientes que se le puedan caer. Modifica la funcion anterior para que deje de sumar dientes caidos cuando los meses lleguen a 8 años.
+
 
 
 return 0;
