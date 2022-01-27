@@ -13,7 +13,7 @@ int multiplicax5 (int num){
 }
 
 void meMultiplicox5 (int &num){
-  return num*5;
+  num = num*5;
   cout << "Num en la funcion vale: " << num << endl;
 }
 
@@ -46,8 +46,8 @@ cin >> numJuegos;
   }
 
   for (int i = 0; i < numJuegos ; i++){
-  cout << "juegos" << i << " = " << juegos[i] << endl;*/
-  } //Termina el bluce for
+  cout << "juegos" << i << " = " << juegos[i] << endl;
+} //Termina el bluce for*/
 
 numero2 = multiplicax5(numero1);
 cout << "El numero1 es " << numero1 << endl;
@@ -56,7 +56,7 @@ cout << "El numero2 es " << numero2 << endl;
 meMultiplicox5(numero1);
 cout << "El numero1 es " << numero1 <<endl << endl;
 
-cout <<"Notas original" << endl:
+cout <<"Notas original" << endl;
 imprimirArray(notas, 3);
 cout << "Subimos la nota" << endl;
 subirNota(notas,1,9);
