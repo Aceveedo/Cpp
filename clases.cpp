@@ -6,15 +6,18 @@ private:
   double base = 5;
   double altura = 1;
 public:
+
   Rectangulo(double base = 1, double altura = 1){
-    this -> base = base;
-    this -> altura = altura;
+    //this -> base = base;
+    //this -> altura = altura;
+    setBase(base);
+    setAltura(altura);
   }
   void setBase(double base){
-    this -> base = base;
+    (base > 0) ? this -> base = base : this -> base = 1;
   }
   void setAltura(double altura){
-    this -> altura = altura;
+    (altura > 0) this -> altura = altura: this -> altura = 1;
   }
   double getBase(){
     return this -> base;
